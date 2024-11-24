@@ -50,7 +50,7 @@ namespace CRUD.actions
             Person result = await current_context.Persons
                     .Include(p => p.Skills)
                     .FirstOrDefaultAsync(p => p.Id == id);
-                    //unable to make linq to work here and afterwards
+                    //Unable to make linq to work here and afterwards.
 
             return result;
         }

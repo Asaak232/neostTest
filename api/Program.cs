@@ -6,7 +6,7 @@ using CRUD.actions;
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//update connection string in appsettings on the first launch
+//Update connection string in appsettings on the first launch.
 
 builder.Services.AddEndpointsApiExplorer();
 
